@@ -1,3 +1,5 @@
+# This is a Demo Coffe File
+
 class Animal
   constructor: (@name) ->
 
