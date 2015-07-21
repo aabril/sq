@@ -1,0 +1,31 @@
+{
+  "name": "sq",
+  "version": "1.0.0",
+  "private": true,
+  "description": "gulp jade stylus coffee layout",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aabril/sq.git"
+  },
+  "keywords": [
+    "gulp",
+    "jade",
+    "stylus",
+    "coffee"
+  ],
+  "author": "Albert Abril",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aabril/sq/issues"
+  },
+  "homepage": "https://github.com/aabril/sq",
+  "devDependencies": {
+    "browser-sync": "^2.8.0",
+    "gulp": "^3.9.0",
+    "require-dir": "^0.3.0"
+  }
+}
