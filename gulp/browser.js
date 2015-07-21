@@ -3,14 +3,14 @@ var browserSync = require('browser-sync');
 
 module.exports = function () {
    var files = [
-      'dist/*.html',
-      'dist/js/*.js',
-      'dist/css/*.css',
+      'public/*.html',
+      'public/js/*.js',
+      'public/css/*.css',
    ];
 
    browserSync.init(files, {
       server: {
-         baseDir: './dist'
+         baseDir: './public'
       }
    });
 };
