@@ -1,20 +1,42 @@
 doctype html
-html(lang="en")
+html(lang='en')
   head
-    title= pageTitle
-    script(type='text/javascript').
-      if (foo) {
-         bar(1 + 5)
-      }
+    //
+      Basic Page Needs
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
+    meta(charset='utf-8')
+    title Your page title here :)
+    meta(name='description', content='')
+    meta(name='author', content='')
+    //
+      Mobile Specific Metas
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    //
+      FONT
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
+    link(href='//fonts.googleapis.com/css?family=Raleway:400,300,600', rel='stylesheet', type='text/css')
+    //
+      CSS
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
+    link(rel='stylesheet', href='css/normalize.css')
+    link(rel='stylesheet', href='css/skeleton.css')
+    //
+      Favicon
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
+    link(rel='icon', type='image/png', href='images/favicon.png')
   body
-    h1 Jade - node template engine
-    #container.col
-      if youAreUsingJade
-        p You are amazing
-      else
-        p Get on it!
-      p.
-        Jade is a terse and simple
-        templating language with a
-        strong focus on performance
-        and powerful features.
+    //
+      Primary Page Layout
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
+    .container
+      .row
+        .one-half.column(style='margin-top: 25%')
+          h4 Basic Page
+          p
+            | This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the 
+            a(href='http://www.getskeleton.com') Skeleton documentation
+            | .
+    //
+      End Document
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
