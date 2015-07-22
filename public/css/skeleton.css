@@ -6,6 +6,7 @@
 * http://www.opensource.org/licenses/mit-license.php
 * 12/29/2014
 */
+@import url("http://fonts.googleapis.com/css?family=Gloria Hallelujah");
 .container {
   position: relative;
   width: 100%;
@@ -149,7 +150,7 @@ body {
   font-size: 1.5em /* currently ems cause chrome bug misinterpreting rems on body element */;
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Amatic SC", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gloria Hallelujah", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
 }
 h1,
