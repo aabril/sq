@@ -2,7 +2,7 @@
 @import "demo.css";
 @import "set1.css";
 @import "set2.css";
-@import url("http://fonts.googleapis.com/css?family=Arya");
+@import url("http://fonts.googleapis.com/css?family=Indie Flower");
 .container {
   position: relative;
   width: 100%;
@@ -146,7 +146,7 @@ body {
   font-size: 1.5em /* currently ems cause chrome bug misinterpreting rems on body element */;
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Arya", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Indie Flower", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
 }
 h1,
@@ -444,4 +444,48 @@ hr {
   content: "";
   display: table;
   clear: both;
+}
+.info {
+  text-align: center;
+  padding: 40px 0 0 0;
+}
+.info h1 {
+  font-family: "Raleway";
+}
+.info h1 span {
+  display: block;
+  font-size: 0.4em;
+}
+.info_text {
+  background: #ebf7f8;
+  margin: 2px 0 40px 0;
+  border: 1px solid #9fa0ff;
+  border-radius: 12px;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+}
+.info_text p {
+  margin-bottom: 2px;
+}
+.templates {
+  text-align: left;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+.templates .row {
+  line-height: 1;
+}
+.templates .row img {
+  width: 32%;
+  margin: 0 0.5% 0 0;
+}
+@media (max-width: 760px) {
+  .templates .row img {
+    width: 100%;
+  }
+}
+@media (max-width: 1140px) {
+  .templates .row {
+    text-align: center;
+  }
 }

@@ -8,7 +8,7 @@
 */
 
 grid_max_width = 960px
-google_font = "Arya"
+google_font = "Indie Flower"
 
 // Didact+Gothic
 @import url("http://fonts.googleapis.com/css?family="+google_font);
@@ -28,3 +28,39 @@ base_font_family = google_font, "HelveticaNeue", "Helvetica Neue", Helvetica, Ar
 @import "skeleton/12.misc.styl"
 @import "skeleton/13.clearing.styl"
 @import "skeleton/14.mediaqueries.styl"
+
+
+.info
+  text-align center
+  padding: 40px 0 0 0
+  h1
+    font-family "Raleway"
+    span
+      display:block;
+      font-size 0.4em
+      // text-align: right;
+
+.info_text
+  background #EBF7F8
+  margin 2px 0 40px 0
+  border 1px solid #9FA0FF
+  border-radius 12px
+  height auto
+  padding 10px 10px 10px 10px
+  p
+    margin-bottom 2px
+
+.templates
+  text-align left
+  padding 0 0 0 0
+  margin 0 0 0 0
+  .row
+    line-height 1
+    img
+      width 32%
+      margin 0 0.5% 0 0
+      // padding 0 0 0 0
+      @media (max-width: 760px)
+        width 100%
+    @media (max-width: 1140px)
+      text-align center
