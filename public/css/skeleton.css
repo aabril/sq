@@ -505,6 +505,13 @@ hr {
   font-family: 'Raleway';
   font-size: 1em;
 }
+@media (max-width: 760px) {
+  .templates .row .img_container .img_html {
+    font-size: 2em;
+    height: 30px;
+    line-height: 1;
+  }
+}
 .templates .row .img_container img {
   width: 100%;
   height: 100%;
