@@ -482,16 +482,30 @@ hr {
 }
 .templates .row .img_container {
   width: 32%;
+  height: 100%;
   float: left;
   overflow: hidden;
   margin: 0 0.5% 0% 0;
-  background: #f00;
+  background: #000;
+  cursor: pointer;
+}
+@media (max-width: 760px) {
+  .templates .row .img_container {
+    width: 100%;
+    margin-bottom: 8px;
+  }
 }
 .templates .row .img_container .img_html {
   position: absolute;
+  margin-top: 10px;
+  color: #fff;
+  z-index: 1;
+  padding: 2%;
+  opacity: 0;
+  font-family: 'Raleway';
+  font-size: 1em;
 }
 .templates .row .img_container img {
-  padding: 0 0 0 0;
   width: 100%;
   height: 100%;
   -webkit-filter: grayscale(1);
@@ -504,12 +518,7 @@ hr {
   -ms-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
-@media (max-width: 760px) {
-  .templates .row .img_container img {
-    width: 100%;
-  }
-}
-.templates .row .img_container img:hover {
+.templates .row .img_container:hover > img {
   filter: grayscale(0);
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
@@ -520,5 +529,17 @@ hr {
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
-  margin-left: 40%;
+  margin-left: 4%;
+  position: inherit;
+  overflow-y: hidden;
+}
+.templates .row .img_container:hover > .img_html {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 1;
+  margin-left: 1%;
+  background: #000;
 }
