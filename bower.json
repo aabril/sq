@@ -1,0 +1,10 @@
+{
+  "name": "my-project",
+  "version": "0.0.1",
+  "dependencies": {
+    "skeleton-css": "~2.0.4",
+    "threejs": "*",
+    "react": "~0.13.2",
+    "fontawesome": "~4.3.0"
+  }
+}

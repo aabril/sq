@@ -1,21 +1,21 @@
-//- This is a demo JADE file
 doctype html
-html(lang="en")
+html(lang='en')
   head
-    title= pageTitle
-    script(type='text/javascript').
-      if (foo) {
-         bar(1 + 5)
-      }
+    meta(charset='utf-8')
+    title Your page title here :)
+    meta(name='description', content='')
+    meta(name='author', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    include index/fonts.jade
+    link(rel='stylesheet', href='css/normalize.css')
+    link(rel='stylesheet', href='css/skeleton.css')
+    link(rel='icon', type='image/png', href='images/favicon.png')
   body
-    h1 Jade - node template engine
-    #container.col
-      if youAreUsingJade
-        p You are amazing
-      else
-        p Get on it!
-      p.
-        Jade is a terse and simple
-        templating language with a
-        strong focus on performance
-        and powerful features.
+    include ./index/github_ribbon.jade
+    .container
+      include ./index/info.jade
+      include ./index/grid.jade
+
+      footer(style="vertical-align: 10px;")
+        hr
+        p(style="text-align: center;") made with #[img(src="img/heart.gif", width="30px", height="30px", style="margin-top: 10px;")] by #[a(href="http://twitter.com/desmondo") Albert Abril]
